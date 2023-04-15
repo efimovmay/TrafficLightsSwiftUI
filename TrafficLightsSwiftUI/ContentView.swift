@@ -25,6 +25,7 @@ struct ContentView: View {
             Color.black
                 .ignoresSafeArea()
             VStack {
+                
                 CircleLigth()
                     .foregroundColor(.red)
                     .opacity(redLigthOpacity)
@@ -36,10 +37,10 @@ struct ContentView: View {
                 CircleLigth()
                     .foregroundColor(.green)
                     .opacity(greenLigthOpacity)
-                
                 Spacer()
                 Button(action: { actionBottonPressed() }) {
                     Text(actionBottonText)
+                        .frame(width: 180)
                         .padding()
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(Color.white)
